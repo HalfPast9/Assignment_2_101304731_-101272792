@@ -1,0 +1,58 @@
+0, 1, switch to kernel mode
+1, 10, context saved
+11, 1, find vector 3 in memory position 0x0006
+12, 1, load address 0X042B into the PC
+13, 25, exec bookkeeping
+38, 150, loader copy disk->RAM
+188, 3, marking partition as occupied
+191, 6, updating PCB
+197, 0, remaining space in partition 4: 0 MB
+197, 0, scheduler called
+197, 1, IRET
+198, 10, CPU Burst
+208, 1, switch to kernel mode
+209, 10, context saved
+219, 1, find vector 6 in memory position 0x000C
+220, 1, load address 0X0639 into the PC
+221, 265, SYSCALL ISR
+486, 1, IRET
+487, 1, switch to kernel mode
+488, 10, context saved
+498, 1, find vector 6 in memory position 0x000C
+499, 1, load address 0X0639 into the PC
+500, 265, ENDIO ISR
+765, 1, IRET
+766, 1, switch to kernel mode
+767, 10, context saved
+777, 1, find vector 2 in memory position 0x0004
+778, 1, load address 0X0695 into the PC
+779, 15, cloning the PCB
+794, 0, scheduler called
+794, 1, IRET
+795, 12, CPU Burst
+807, 1, switch to kernel mode
+808, 10, context saved
+818, 1, find vector 3 in memory position 0x0006
+819, 1, load address 0X042B into the PC
+820, 20, exec bookkeeping
+840, 225, loader copy disk->RAM
+1065, 3, marking partition as occupied
+1068, 6, updating PCB
+1074, 0, remaining space in partition 2: 10 MB
+1074, 0, scheduler called
+1074, 1, IRET
+1075, 12, CPU Burst
+1087, 0, scheduler called
+1087, 8, CPU Burst
+1095, 1, switch to kernel mode
+1096, 10, context saved
+1106, 1, find vector 3 in memory position 0x0006
+1107, 1, load address 0X042B into the PC
+1108, 20, exec bookkeeping
+1128, 225, loader copy disk->RAM
+1353, 3, marking partition as occupied
+1356, 6, updating PCB
+1362, 0, remaining space in partition 1: 25 MB
+1362, 0, scheduler called
+1362, 1, IRET
+1363, 12, CPU Burst

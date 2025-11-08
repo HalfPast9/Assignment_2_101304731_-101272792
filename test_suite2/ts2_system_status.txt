@@ -1,0 +1,62 @@
+time: 198; current trace: EXEC base10, 25
+PID | Program      | Part | Size(MB) | State
+---------------------------------------------
+  0 | base10       |    4 |       10 | running
+
+Partitions:
+#  | Size | Code
+----------------
+ 1 |   40 | free
+ 2 |   25 | free
+ 3 |   15 | free
+ 4 |   10 | base10
+ 5 |    8 | free
+ 6 |    2 | init
+
+time: 795; current trace: FORK, 15
+PID | Program      | Part | Size(MB) | State
+---------------------------------------------
+  1 | base10       |    3 |       10 | running
+  0 | base10       |    4 |       10 | waiting
+
+Partitions:
+#  | Size | Code
+----------------
+ 1 |   40 | free
+ 2 |   25 | free
+ 3 |   15 | base10
+ 4 |   10 | base10
+ 5 |    8 | free
+ 6 |    2 | init
+
+time: 1075; current trace: EXEC util15, 20
+PID | Program      | Part | Size(MB) | State
+---------------------------------------------
+  1 | util15       |    2 |       15 | running
+  0 | base10       |    4 |       10 | waiting
+
+Partitions:
+#  | Size | Code
+----------------
+ 1 |   40 | free
+ 2 |   25 | util15
+ 3 |   15 | base10
+ 4 |   10 | base10
+ 5 |    8 | free
+ 6 |    2 | init
+
+time: 1363; current trace: EXEC util15, 20
+PID | Program      | Part | Size(MB) | State
+---------------------------------------------
+  0 | util15       |    1 |       15 | running
+
+Partitions:
+#  | Size | Code
+----------------
+ 1 |   40 | util15
+ 2 |   25 | util15
+ 3 |   15 | base10
+ 4 |   10 | base10
+ 5 |    8 | free
+ 6 |    2 | init
+
